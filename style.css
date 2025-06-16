@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: 
+      linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(20, 20, 20, 0.9)),
+      url('img/xoxo-colorful-seamless-pattern-bold-260nw-2292698433.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+    
+  .container {
+    text-align: center;
+    background: rgba(247, 4, 4, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px cyan;
+  }
+  
+  .status {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 2.5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  
+  .cell:hover {
+    background: rgba(0, 255, 255, 0.2);
+  }
+  
+  .cell.win {
+    background: rgba(0, 255, 0, 0.4);
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+  }
+  
+  .reset-btn:hover {
+    background-color: #00cccc;
+  }
+  
